@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>いちる整体院 / Swipe LP Index</title>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700;800&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"M PLUS 1p", system-ui, sans-serif; background:#fdf6ef; color:#333; padding:32px 20px; min-height:100vh; }
+  .wrap { max-width:560px; margin:0 auto; }
+  h1 { font-family:"Shippori Mincho", serif; font-size:22px; margin-bottom:8px; color:#0f2439; }
+  .sub { color:#8a7a6c; font-size:13px; margin-bottom:24px; line-height:1.7; }
+  .lp { display:block; background:white; border-radius:12px; padding:18px 20px; margin-bottom:12px; text-decoration:none; color:#333; box-shadow:0 4px 14px rgba(141,94,60,0.08); border-left:3px solid #ef8862; transition:transform .15s ease; }
+  .lp:active { transform:scale(0.98); }
+  .lp .title { font-weight:700; font-size:15px; margin-bottom:4px; }
+  .lp .desc { font-size:12px; color:#8a7a6c; line-height:1.6; }
+  .lp .tag { display:inline-block; font-size:10px; padding:2px 8px; border-radius:4px; background:#fdf6ef; color:#8d5e3c; margin-left:6px; letter-spacing:0.05em; }
+  .lp .tag.new { background:#ef8862; color:white; }
+  footer { margin-top:32px; font-size:11px; color:#8a7a6c; text-align:center; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>いちる整体院 Swipe LP</h1>
+  <p class="sub">スワイプLP評価用デモ。スマホで縦スワイプして閲覧。</p>
+
+  <a class="lp" href="ibs-relumi/">
+    <div class="title">過敏性腸症候群 IBS<span class="tag new">RELUMI構造</span></div>
+    <div class="desc">22スライド構成。Before/After・3ヶ月持続性・POINT全画面など、Relumi系UI技法を全部入り。</div>
+  </a>
+
+  <a class="lp" href="ibs/">
+    <div class="title">過敏性腸症候群 IBS<span class="tag">標準</span></div>
+    <div class="desc">19スライド構成。シンプルな説得フロー版。</div>
+  </a>
+
+  <a class="lp" href="lower-back/">
+    <div class="title">慢性腰痛<span class="tag">量産デモ</span></div>
+    <div class="desc">同じシステムから別症状を量産した例。</div>
+  </a>
+
+  <footer>
+    Built with Node.js<br>
+    Source: .company/マーケティング/swipe-lp/system/
+  </footer>
+</div>
+</body>
+</html>
