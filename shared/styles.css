@@ -1139,3 +1139,39 @@ body {
 .compare-card .col.bad li::before { content: "×"; position: absolute; left: 0; color: var(--muted); font-weight: 700; }
 .compare-card .col.good li::before { content: "✓"; position: absolute; left: 0; color: white; font-weight: 700; }
 
+
+/* === Image Hero with hotspots === */
+.s-image-hero {
+  padding: 0 !important;
+  background: var(--cream);
+  align-items: center;
+  justify-content: center;
+}
+.image-hero-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.image-hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100svh;
+  object-fit: contain;
+}
+.hotspot {
+  position: absolute;
+  display: block;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.15s ease;
+  -webkit-tap-highlight-color: rgba(239, 136, 98, 0.3);
+}
+.hotspot:active { background: rgba(239, 136, 98, 0.15); }
+.hotspot.debug {
+  background: rgba(239, 136, 98, 0.25);
+  outline: 2px dashed var(--coral);
+}
